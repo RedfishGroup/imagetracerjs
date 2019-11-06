@@ -35,9 +35,9 @@ For more information, please refer to http://unlicense.org/
 
 */
 
-(function(){ 'use strict';
 
-function ImageTracer(){
+
+export function ImageTracer(){
 	var _this = this;
 
 	this.versionnumber = '1.2.5',
@@ -1191,13 +1191,5 @@ function ImageTracer(){
 	
 }// End of ImageTracer object
 
-// export as AMD module / Node module / browser or worker variable
-if(typeof define === 'function' && define.amd){
-	define(function() { return new ImageTracer(); });
-}else if(typeof module !== 'undefined'){
-	module.exports = new ImageTracer();
-}else if(typeof self !== 'undefined'){
-	self.ImageTracer = new ImageTracer();
-}else window.ImageTracer = new ImageTracer();
 
-})();
+
